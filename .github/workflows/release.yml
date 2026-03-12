@@ -13,3 +13,4 @@ jobs:
     - run: docker build . t salatgabel/nest-app
     - run: echo "${{secrets.DOCKER_PASSWORD}}" | docker login -u ${{secrets.DOCKERHUB_USERNAME}} --password stdin
     - run: docker push salatgabel/nest-app
+#test
